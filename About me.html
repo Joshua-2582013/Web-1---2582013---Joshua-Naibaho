@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Biodata</title>
+    <link rel ="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>My biodata :)</h1>
+        <p>Welcome to my personal profil page.</p>
+    </header>
+
+    <nav>
+        <a href="#profile">Profile</a> |
+        <a href="#hobbies">Hobbies</a> |
+        <a href="#academic">Academic Record</a> |
+        <a href="#contact">Contact Me</a>
+    </nav>
+
+    <hr>
+
+    <main>
+        <section id="profile">
+            <h2>Student Profile</h2>
+            <img
+                src="Foto-Liburan-Bandung.jpeg"
+                alt="My photo"
+                width="450"
+                height="250"
+            >
+            <br>
+            <p>
+                Hello my name is Joshua, and i am a student of university Advent Bandung.
+                My major is System Information, Faculty of Informatic Engginering.
+            </p>
+            <p>
+                I hope i can find a side hustle to get money and to cover all my need,
+                pray for me guys!
+            </p>
+
+            <h3>Personal Information</h3>
+            <p>
+                <strong>Name :</strong> Joshua Fowler Raynaldo Naibaho <br>
+                <strong>NIM :</strong> 2582013 <br>
+                <strong>Study Program :</strong> Information System <br>
+                <strong>Email :</strong>
+                <a href="mailto:2582013@unai.edu">2582013@unai.edu</a>
+            </p>
+        </section>
+
+        <section id="hobbies">
+            <h2>My Hobbies</h2>
+            <h3>My Favorite Hobbies</h3>
+            <ol>
+                <li>Running</li>
+                <li>Playing mussical Instrument</li>
+                <li>Gaming</li>
+                <li>Studying</li>
+            </ol>
+            <h3>Other Activities that I Enjoy</h3>
+            <ul>
+                <li>Listenning Music</li>
+                <li>Playing Badminton</li>
+                <li>Watching Movies</li>
+                <li>Reading</li>
+            </ul>
+        </section>
+
+        <section id="academic">
+            <h2>Academic Record</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Semester</th>
+                        <th>Academic Year</th>
+                        <th>GPA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Odd Semester</td>
+                        <td>2025/2026</td>
+                        <td>3.82</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Even Semester</td>
+                        <td>2025/2026</td>
+                        <td>3.72</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <label for="fullName">Full Name:</label><br>
+                <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    minlength="3"
+                    maxlength="50"
+                    required
+                ><br><br>
+
+                <label for="email">Email:</label><br>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                ><br><br>
+
+                <label for="category">Message Category:</label><br>
+                <select id="category" name="category">
+                    <option value="">-- Select Category --</option>
+                    <option value="academic">Academic</option>
+                    <option value="project">Project Collaboration</option>
+                    <option value="general">General</option>
+                </select><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    cols="30"
+                    minlength="10"
+                    maxlength="500"
+                    required
+                ></textarea><br><br>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Joshua Fowler Raynaldo Naibaho | Web Programming I</p>
+
+        <p>
+            Faculty of Information Technology<br>
+            Universitas Advent Indonesia
+        </p>
+    </footer>
+</body>
+</html>
