@@ -119,3 +119,36 @@ footer {
   font-size: 13px;
 }
 
+/* Untuk handphone atau mobile */
+
+img {
+  max-width: 100%;  
+}
+
+nav {
+  flex-wrap: wrap;  
+  gap: 12px;
+  padding: 10px 20px;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 16px 20px;  
+  }
+
+  main {
+    padding: 20px 16px;  
+  }
+
+  footer {
+    padding: 16px 20px;
+  }
+
+  table {
+    font-size: 13px;  
+  }
+
+  input, textarea {
+    width: 100%;  
+  }
+}
