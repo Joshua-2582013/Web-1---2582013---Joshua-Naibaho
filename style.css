@@ -1,0 +1,249 @@
+/* Definisikan Global Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #263238;
+    background-color: #f5f7f6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #17694a;
+}
+
+/* Styling untuk Header */
+header {
+    padding: 32px 20px;
+    background-color: #17694a;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 8px 0 0;
+}
+
+/* Styling untuk Navigation */
+nav {
+    font-weight: bolder;
+    padding: 14px 20px;
+    background-color: white;
+    border-bottom: 1px solid #d7e1dc;
+    text-align: center;
+}
+
+nav a {
+    color:#263238;
+    text-decoration: none;
+    padding: 8px 16px;         
+    border-radius: 6px;         
+    display: inline-block;     
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+     color:#14513a;
+    text-decoration: underline;
+    transform: translateY(-3px);
+}
+
+/* Styling untuk Main */
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 24px auto;
+}
+
+/* Memilih class content-grid */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+/* Styling untuk Section - Box */
+section {
+    padding: 24px;
+    background-color: white;
+    border: 1px solid #d7e1dc;
+    border-radius: 16px;
+}
+
+section h2 {
+    margin-top: 0;
+    color: #17694a;
+}
+
+/* Profile Section Flexbox */
+.profile {
+    position: relative;
+    text-align: left;
+}
+
+.profile-top {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 20px; /* Jarak ke Personal Information di bawah */
+}
+
+.profile-photo {
+    width: 180px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #17694a;
+    flex-shrink: 0;           /* Agar foto tidak memipih saat layar menyempit */
+}
+
+.profile-bio {
+    flex: 1;
+}
+
+.profile-info h2, .profile-info h3 {
+    margin-bottom: 8px;
+    color: #17694a;
+}
+
+.profile-info p {
+    margin: 5px 0;
+}
+
+.badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    padding: 3px 6px;
+    background-color: #17694a;
+    color: white;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+#hobbies ol, #hobbies ul {
+    padding-left: 24px;
+}
+
+#hobbies li {
+    margin-bottom: 6px;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #d7e1dc;
+}
+
+th {
+    background-color: #17694a;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f5f7f6;
+}
+
+form {
+    display: grid;
+    gap: 6px;
+}
+
+.form-group {
+    display: grid;
+    gap: 6px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #b9c8c0;
+    border-radius: 8px;
+    font: inherit;
+    background-color: white;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid #17694a;
+    outline-offset: 2px;
+}
+
+button {
+    width: fit-content;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #17694a;
+    color: white;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0d5038;
+}
+
+#contact {
+    grid-column: auto;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #0d5038;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsif untuk Layar Laptop / Tablet */
+@media (min-width: 769px) {
+    .profile {
+        flex-direction: row;     /* Foto di KIRI, Teks di KANAN */
+        align-items: flex-start; /* Meratakan posisi atas foto dan teks */
+    }
+    
+    .content-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    
+    .profile { grid-column: 1 / -1; }
+    #contact { grid-column: 1 / -1; }
+}
