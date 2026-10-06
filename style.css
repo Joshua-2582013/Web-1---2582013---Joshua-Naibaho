@@ -103,7 +103,7 @@ section h2 {
 }
 
 .profile-photo {
-    width: 180px;
+    width: clamp(90px, 28vw, 180px);
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 50%;
@@ -243,7 +243,12 @@ footer p {
     .content-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+}
     
-    .profile { grid-column: 1 / -1; }
-    #contact { grid-column: 1 / -1; }
+    @media (max-width: 768px) {
+    .badge {
+        position: static;
+        display: inline-block;
+        margin-bottom: 12px;
+    }
 }
