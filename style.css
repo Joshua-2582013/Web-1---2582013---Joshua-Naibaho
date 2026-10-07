@@ -61,6 +61,7 @@ nav a:hover {
      color:#14513a;
     text-decoration: underline;
     transform: translateY(-3px);
+    white-space: nowrap;
 }
 
 /* Styling untuk Main */
@@ -237,7 +238,7 @@ footer p {
 }
 
 /* Responsif untuk Layar Laptop / Tablet */
-@media (min-width: 769px) {
+    @media (min-width: 769px) {
     .profile {
         flex-direction: row;     
         align-items: flex-start; 
@@ -253,5 +254,15 @@ footer p {
         position: static;
         display: inline-block;
         margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;      /* paksa satu baris */
+        gap: 6px;
+        padding: 12px 8px;
     }
 }
