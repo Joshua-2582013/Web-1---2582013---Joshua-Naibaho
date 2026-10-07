@@ -41,7 +41,8 @@ header p {
 /* Styling untuk Navigation */
 nav {
     font-weight: bolder;
-    padding: 14px 20px;
+    font-size: 16px;
+    padding: 8px;
     background-color: white;
     border-bottom: 1px solid #d7e1dc;
     text-align: center;
@@ -97,9 +98,11 @@ section h2 {
 
 .profile-top {
     display: flex;
+    flex-direction: column;
     gap: 20px;
-    align-items: flex-start;
-    margin-bottom: 20px; /* Jarak ke Personal Information di bawah */
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px; 
 }
 
 .profile-photo {
@@ -236,8 +239,8 @@ footer p {
 /* Responsif untuk Layar Laptop / Tablet */
 @media (min-width: 769px) {
     .profile {
-        flex-direction: row;     /* Foto di KIRI, Teks di KANAN */
-        align-items: flex-start; /* Meratakan posisi atas foto dan teks */
+        flex-direction: row;     
+        align-items: flex-start; 
     }
     
     .content-grid {
