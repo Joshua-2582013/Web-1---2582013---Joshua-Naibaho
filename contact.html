@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hubungi Joshua Folwer Raynaldo Naibaho lewat email, Instagram, Facebook, atau GitHub.">
+  <title>Contact Me - Joshua Folwer Raynaldo Naibaho</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contactstyle.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <h1>Joshua Folwer Raynaldo Naibaho</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="biodata.html">Biodata</a></li>
+          <li><a href="myHoliday.html">My Holiday</a></li>
+          <li><a href="contact.html" class="active">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2 class="page-title">Contact Me</h2>
+    <p class="contact-intro">
+      Terima kasih sudah berkunjung! Jika kamu punya pertanyaan, ingin
+      berkolaborasi, atau sekadar ingin berkenalan, jangan ragu untuk
+      menghubungi saya lewat form di bawah ini, email, atau media sosial saya.
+    </p>
+
+    <div class="contact-layout">
+
+      <aside class="contact-card contact-info" aria-labelledby="info-heading">
+        <h3 id="info-heading">Informasi Kontak</h3>
+        <ul class="contact-list">
+          <li>
+            <span class="label">Email</span>
+            <a href="mailto:joshnaibaho294@gmail.com">joshnaibaho294@gmail.com</a>
+          </li>
+          <li>
+            <span class="label">Instagram</span>
+            <a href="https://www.instagram.com/joshfrntyz/" target="_blank" rel="noopener">@joshfrntyz</a>
+          </li>
+          <li>
+            <span class="label">Facebook</span>
+            <a href="https://www.facebook.com/joshua.f.naibaho.7" target="_blank" rel="noopener">Joshua Fowler Raynaldo Naibaho</a>
+          </li>
+          <li>
+            <span class="label">GitHub</span>
+            <a href="https://github.com/joshnaibaho294-svg" target="_blank" rel="noopener">github.com/joshnaibaho294-svg</a>
+          </li>
+        </ul>
+      </aside>
+
+      <section class="contact-card contact-form-card" aria-labelledby="form-heading">
+        <h3 id="form-heading">Kirim Pesan</h3>
+
+        <form action="mailto:joshnaibaho294@gmail.com" method="post" enctype="text/plain">
+          <div class="form-group">
+            <label for="fullname">Nama Lengkap <span class="req">*</span></label>
+            <input type="text" id="fullname" name="Nama Lengkap" placeholder="Nama lengkap kamu" autocomplete="name" required minlength="3">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Alamat Email <span class="req">*</span></label>
+            <input type="email" id="email" name="Email" placeholder="nama@email.com" autocomplete="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subjek <span class="req">*</span></label>
+            <input type="text" id="subject" name="Subjek" placeholder="Tentang apa pesan kamu?" required minlength="3">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Pesan <span class="req">*</span></label>
+            <textarea id="message" name="Pesan" rows="6" placeholder="Tulis pesan kamu di sini..." required minlength="10"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-send">Send Message</button>
+          <p class="form-note">* wajib diisi. Pesan akan dibuka di aplikasi email kamu.</p>
+        </form>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Joshua Folwer Raynaldo Naibaho | NIM 2582013 | Sistem Informasi</p>
+  </footer>
+
+</body>
+</html>

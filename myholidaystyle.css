@@ -1,0 +1,58 @@
+/* ==========================================================
+   myholidaystyle.css - Style khusus halaman myHoliday.html
+   (header, navbar, dan footer tetap memakai style.css)
+   ========================================================== */
+
+.holiday-content {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.75rem;
+}
+
+.holiday-content h2 {
+  color: #1e5a4c;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.holiday-content hr {
+  border: none;
+  border-top: 2px solid #e8f3ef;
+  margin: 1.25rem 0;
+}
+
+.holiday-content p {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+.holiday-content .identity {
+  text-align: left;
+}
+
+/* Foto liburan: di tengah, responsif */
+.holiday-photo {
+  display: block;
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.holiday-content a {
+  color: #1e5a4c;
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .holiday-content {
+    padding: 1.25rem;
+  }
+
+  .holiday-content h2 {
+    font-size: 1.5rem;
+  }
+}

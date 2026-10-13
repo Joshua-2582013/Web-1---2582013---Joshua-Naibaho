@@ -1,15 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Practicum</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website pribadi Joshua Folwer Raynaldo Naibaho, mahasiswa Sistem Informasi.">
+  <title>Home - Joshua Folwer Raynaldo Naibaho</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>My Web Programming Practicum</h1>
-    <p>Welcome to my Web Programming I practicum.</p>
-    <p>
-        <a href="Aboutme-responsive.html">Open My About Me Page</a>
-    </p>
+
+  <header>
+    <div class="header-inner">
+      <h1>Joshua Folwer Raynaldo Naibaho</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="biodata.html">Biodata</a></li>
+          <li><a href="myHoliday.html">My Holiday</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="greeting">Selamat datang di website saya</p>
+        <h2>Halo, saya Joshua Folwer Raynaldo Naibaho</h2>
+        <p>
+          Saya mahasiswa Sistem Informasi yang tertarik pada pemrograman,
+          basis data, dan pengembangan web. Di website ini kamu bisa mengenal
+          lebih jauh tentang latar belakang saya, melihat pengalaman liburan
+          saya, dan menghubungi saya.
+        </p>
+        <div class="cta">
+          <a href="biodata.html" class="btn btn-primary">Lihat Biodata</a>
+          <a href="contact.html" class="btn btn-outline">Hubungi Saya</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="Profil.png" alt="Foto Joshua Folwer Raynaldo Naibaho">
+      </div>
+    </section>
+
+    <section class="highlights">
+      <h3>Jelajahi Website Ini</h3>
+      <div class="cards">
+        <article class="card">
+          <h4>Biodata</h4>
+          <p>Informasi pribadi, latar belakang akademik, hobi, dan minat saya.</p>
+        </article>
+        <article class="card">
+          <h4>My Holiday</h4>
+          <p>Galeri foto pengalaman liburan dan momen yang berkesan.</p>
+        </article>
+        <article class="card">
+          <h4>Contact Me</h4>
+          <p>Kirim pesan atau terhubung dengan saya lewat email dan media sosial.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Joshua Folwer Raynaldo Naibaho | NIM 2582013 | Sistem Informasi</p>
+  </footer>
+
 </body>
 </html>
