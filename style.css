@@ -20,7 +20,7 @@ header {
   padding: 1rem 1.5rem;
 }
 
-.header-inner {
+.header1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -96,7 +96,7 @@ footer {
   color: #ffffff;
 }
 
-.hero {
+.jojo {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -107,11 +107,11 @@ footer {
   padding: 2.5rem 2rem;
 }
 
-.hero-text {
+.jojo1 {
   flex: 1 1 320px;
 }
 
-.hero-text .greeting {
+.jojo1 .greeting {
   color: #1e5a4c;
   font-weight: bold;
   letter-spacing: 0.05em;
@@ -119,24 +119,24 @@ footer {
   font-size: 0.9rem;
 }
 
-.hero-text h2 {
+.jojo1 h2 {
   font-size: 2.2rem;
   line-height: 1.2;
   margin: 0.5rem 0 1rem;
   color: #14382f;
 }
 
-.hero-text p {
+.jojo1 p {
   margin-bottom: 1.5rem;
 }
 
-.hero-image {
+.gambar-jojo {
   flex: 0 1 320px;
   display: flex;
   justify-content: center;
 }
 
-.hero-image img {
+.gambar-jojo img {
   width: 100%;
   max-width: 320px;
   height: auto;
@@ -147,7 +147,7 @@ footer {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.cta {
+tombol {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
@@ -163,13 +163,13 @@ footer {
   font-size: 1.4rem;
 }
 
-.cards {
+.boxs {
   display: flex;
   flex-wrap: wrap;
   gap: 1.25rem;
 }
 
-.card {
+.box {
   flex: 1 1 250px;
   background-color: #ffffff;
   border-radius: 8px;
@@ -177,7 +177,7 @@ footer {
   padding: 1.25rem;
 }
 
-.card h4 {
+.box h4 {
   color: #1e5a4c;
   margin-bottom: 0.5rem;
 }
